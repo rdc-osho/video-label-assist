@@ -1,0 +1,28 @@
+{
+  "dataset": "synthetic_procedure v1",
+  "video_sha256": "ae4d377b9585b64f938ce0c377e109fd9d0d04e7161b7ce179d2c02cf8c23438",
+  "ground_truth_sha256": "514848d618e92883e2f84e80e2dcc50e3d4b70f994f26b36071d9ceeca012b48",
+  "frames": 240,
+  "fps": 15.0,
+  "split": {
+    "development": "0-179",
+    "test": "180-239"
+  },
+  "parameters": {
+    "keyframe_every": 10,
+    "search_px": 24,
+    "confidence_threshold": 0.9,
+    "tuned_on": "development only"
+  },
+  "tools": {
+    "python": "3.13.18",
+    "opencv": "5.0.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "method": "template matching, TM_CCOEFF_NORMED"
+  },
+  "outputs": {
+    "ai_suggestions": "labels/ai_suggestions.csv",
+    "approved_labels": "labels/approved_labels.csv"
+  }
+}
